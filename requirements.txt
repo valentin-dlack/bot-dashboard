@@ -1,0 +1,4 @@
+quart
+dotenv
+quart-discord
+nextcord
