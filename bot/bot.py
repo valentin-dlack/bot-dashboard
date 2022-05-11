@@ -84,9 +84,9 @@ async def on_message(message):
         if message.content.lower().find(banword["value"].lower()) != -1:
             await message.delete()
             await message.channel.send(f"{message.author.mention} Dis pas ça !! :(")
-        else:
-            await my_bot.process_commands(message)
             return
+    await my_bot.process_commands(message)
+    return
         
 @my_bot.event
 async def on_message_delete(message):
